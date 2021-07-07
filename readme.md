@@ -23,3 +23,7 @@ SQL (Structured Query Language) is een Data Manipulation Language. Het is een sp
 2. je voert data in, update data, leest data en verwijdert de data (CRUD).
 
 [Hier](sql.md) kun je meer informatie vinden over SQL.
+
+### Tabel oefening
+
+Ga [hier](create_opdracht.md) oefenen met tabellen aanmaken.
