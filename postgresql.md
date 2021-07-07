@@ -15,3 +15,21 @@ Download PostgreSQL hier: https://www.postgresql.org/download/.
 Als je het geïnstalleerd hebt, open `pgAdmin4`. Klik op `Servers`, klik dan `PostgreSQL` open en maak een nieuwe database aan onder de `Databases` map.
 
 ![img.png](img.png)
+
+Wanneer je SQL wilt uitvoeren klik je op `Tools` en dan `Query Tool`. In `Query Editor` kun je je code uitvoeren en `Query History` zie je de geschiedenis.
+
+![img_1.png](img_1.png)
+
+Het opslaan van de data doe je met de `play` knop of `F5`.
+
+![img_2.png](img_2.png)
+
+Wanneer je een succes bericht hebt gekregen bij `Messages`, dan klik je op `Schemas` en dan komt hij in `Tables` te staan. In dit voorbeeld is een `pigeon` tabel gemaakt.
+
+![img_3.png](img_3.png)
+
+Deze `pigeon` heeft de volgende kolommen `ringnumber`, `sex` and `birthdate`.
+
+![img_4.png](img_4.png)
+
+Hiermee check je of alles goed in je database is terecht gekomen.
