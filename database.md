@@ -5,7 +5,7 @@
 Een database is een georganiseerde collectie van gestructureerde informatie (of data) dat is opgeslagen in een (elektronisch) systeem. Elektronisch wordt de data gecontroleerd door een database management systeem (DBMS). Deze twee samen zijn onderdeel van het database-systeem of kortgezegd de database.
 
 - <i> georganiseerde collectie van gestructureerde informatie (of data)</i>: je moet vooraf bepalen hoe het georganiseerd gaat zijn.
-- <i>database management systeem (DBMS)</i>: het softwarepakket. Het database-systeem dat we gebruiken heet `pgAdmin`.
+- <i>database management systeem (DBMS)</i>: is het softwarepakket. Het database-systeem dat we gebruiken heet `pgAdmin`.
 
 ### Eisen aan de data
 
@@ -18,11 +18,11 @@ Als je data in een database wilt opslaan moet het aan een paar dingen voldoen.
 
 ### Eisen  data en database
 
-- De data moet consistent zijn.
+- De data moet consistent zijn
   - <i>Sla de data niet dubbel op</i>. Bijv. wanneer je een rekeningnummer 1234 in tabel 1 hebt staan en hetzelfde rekeningnummer ook in tabel 2. Wanneer het rekeningnummer verandert en alleen in tabel 1 wordt aangepast is je data inconsistent
   - <i>Relaties moeten blijven kloppen wanneer de gegevens verwijderd worden</i>.
 
-- Autorisatie/Authenticatie: bij installeren moest je een postgres user aanmaken en hiervoor heb je een wachtwoord aangemaakt. Deze user heeft toegang tot ALLE DBMS
+- Autorisatie/Authenticatie: bij installeren moest je een postgres user aanmaken en hiervoor heb je een wachtwoord aangemaakt. Deze user heeft toegang tot <u>ALLE</u> DBMS
   - <i>Geef niet iedereen toegang tot lezen, schrijven en verwijderen</i>.
 
 ### ACID
