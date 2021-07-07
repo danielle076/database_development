@@ -1,6 +1,6 @@
 ## Werken met een Database
 
-Een database is een medium om data in op te slaan. Voor nu focussen we op het gebruik van <b>Relationele databases</b>: een database waar relaties tussen data in het model worden gedefinieerd.
+Een database is een medium om data in op te slaan. We focussen ons op het gebruik van <u>relationele databases</u>: een database waar relaties tussen data in het model worden gedefinieerd.
 
 Meer informatie over databases vind je [hier](database.md). 
 
@@ -16,3 +16,10 @@ We hebben een aantal spelers op de markt:
 
 Wij werken met PostgreSQL. Klik [hier](postgresql.md) voor meer informatie.
 
+### SQL
+
+SQL (Structured Query Language) is een Data Manipulation Language. Het is een specifieke programmeertaal die is ontworpen voor specifieke databases. Je doet er twee dingen mee.
+1. je creëert tabellen in je database 
+2. je voert data in, update data, leest data en verwijdert de data (CRUD).
+
+[Hier](sql.md) kun je meer informatie vinden over SQL.
