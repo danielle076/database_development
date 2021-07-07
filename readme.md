@@ -1,13 +1,13 @@
-## Working with a Database
+## Werken met een Database
 
-A database is a great medium for storing data. For now, we focus on using Relational databases: a database where relationships between data are defined in the model.
+Een database is een geweldig medium om data in op te slaan. Voor nu focussen we op het gebruik van Relationele databases: een database waar relaties tussen data in het model worden gedefinieerd.
 
-Learn more about databases [here](database.md). 
+Meer informatie over databases vind je [hier](database.md). 
 
-### Download PostgreSQL & first steps
+### Download PostgreSQL & eerste stappen
 
-Download PostgreSQL here: https://www.postgresql.org/download/.
+Download PostgreSQL hier: https://www.postgresql.org/download/.
 
-When you have it installed open `pgAdmin4`. Click `Servers` open, then click `PostgreSQL` open and create a new database under the `Databases` folder.
+Als je het geïnstalleerd hebt, open dan `pgAdmin4`. Klik `Servers` open, klik dan `PostgreSQL` open en maak een nieuwe database aan onder de `Databases` map.
 
 ![img.png](img.png)

@@ -1,7 +1,7 @@
 ## Database
 
-### What is a database?
+### Wat is een database?
 
-A database is an organized collection of structured information (or data) that is stored in an (electronic) system. Electronically, the data is controlled by a database management system (DBMS). These two together are part of the database system or database for short.
+Een database is een georganiseerde collectie van gestructureerde informatie (of data) dat is opgeslagen in een (elektronisch) systeem. Elektronisch wordt de data gecontroleerd door een database management systeem (DBMS). Deze twee samen zijn onderdeel van het database-systeem of kortgezegd de database.
 
-The database system we are using is called pgAdmin.
+Het database-systeem dat we gebruiken heet pgAdmin.
