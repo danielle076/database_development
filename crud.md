@@ -120,5 +120,62 @@ WHERE date_prod < '2020-02-01';
 
 ### Update: wijzigen van gegevens
 
+Je wilt aan de entiteit zelf niets aanpassen maar je wilt wel bijvoorbeeld een e-mailadres aanpassen.
+
+Bij update begin je met drie woorden: <br/>
+UPDATE: de tabelnaam<br/>
+SET: kolomnamen en nieuwe waardes<br/>
+WHERE: we doen hier een clausule dat het maar bij één entiteit is<br/>
+
+Verander de titel van de film met code 3-abc naar Die Hard.
+
+```sql
+UPDATE film
+SET title = 'Die Hard'
+WHERE code = '3-abc';
+```
+
+![img_11.png](pictures/img_11.png)
+
+Verander fantasy naar epic.
+
+```sql
+UPDATE film
+SET kind = 'epic'
+WHERE kind = 'fantasy';
+```
+
+![img_12.png](pictures/img_12.png)
+
+Verander length en title van 1-abc.
+
+```sql
+UPDATE film
+SET length = 1, title = 'Apollo 13'
+WHERE code = '1-abc';
+```
+
+![img_13.png](pictures/img_13.png)
 
 ### Delete: verwijderen van gegevens
+
+Bij delete begin je altijd met: <br/>
+DELETE FROM: de tabelnaam <br/>
+WHERE: de conditie
+
+Verwijder de film met de title 'The Kobbit'.
+
+```sql
+DELETE FROM film
+WHERE title = 'The Kobbit';
+```
+
+![img_14.png](pictures/img_14.png)
+
+Voor het deleten van de volledige tabel gebruik je de volgende code. 
+
+```sql
+DELETE FROM film;
+```
+
+![img_15.png](pictures/img_15.png)
