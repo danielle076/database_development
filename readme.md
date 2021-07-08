@@ -27,3 +27,14 @@ SQL (Structured Query Language) is een Data Manipulation Language. Het is een sp
 ### Tabel oefening
 
 Ga [hier](create_opdracht.md) oefenen met tabellen aanmaken.
+
+### CRUD
+
+Create, Read, Update en Delete (CRUD) zijn de vier basisfuncties die databases  moeten kunnen uitvoeren.
+
+- Create (of insert): Toevoegen van nieuwe gegevens.
+- Read (of select): Opvragen van gegevens.
+- Update: Wijzigen van gegevens.
+- Delete: Verwijderen van gegevens.
+
+Hoe je deze kunt toepassen in postgreSQL lees je [hier](crud.md).
