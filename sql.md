@@ -11,12 +11,14 @@ De data moet ergens in worden opgeslagen en dat moet gestructureerd: in een tabe
 
 ### Een tabel maken
 
-    CREATE TABLE IF NOT EXISTS table_name (
-        column1 datatype(length) column_constraint,
-        column2 datatype(length) column_constraint,
-        column3 datatype(length) column_constraint,
-        table_constraints
-    );
+```sql
+CREATE TABLE IF NOT EXISTS table_name (
+    column1 datatype(length) column_constraint,
+    column2 datatype(length) column_constraint,
+    column3 datatype(length) column_constraint,
+    table_constraints
+);
+```
 
 - Je begint altijd eerst met `CREATE TABLE`.
   
@@ -66,14 +68,16 @@ Constraints zijn beperkingen die je aan je data kunt toevoegen. Beperkingen zijn
 
 Als we iets willen toevoegen aan de tabel, dan mag de column nooit een lege waarde hebben.
 
-    CREATE TABLE orders(
-        ord_no integer NOT NULL,
-        ord_date date NOT NULL,
-        item_name character(35),
-        item_grade character(1),
-        ord_qty numeric NOT NULL,
-        ord_amount numeric
-    );
+```sql
+CREATE TABLE orders (
+    ord_no integer NOT NULL,
+    ord_date date NOT NULL,
+    item_name character(35),
+    item_grade character(1),
+    ord_qty numeric NOT NULL,
+    ord_amount numeric
+);
+```
 
 In dit voorbeeld mogen `ord_no`, `ord_date` en `ord_qty` nooit null zijn, er moet een waarde aan gegeven worden. 
 
@@ -85,14 +89,16 @@ Je kan een check doen dat de order amount altijd groter moet zijn dan 0 met `ord
 
 Deze constraint is postgreSQL specifiek.
 
-    CREATE TABLE orders(
-        ord_no integer,
-        ord_date date,
-        item_name character(35),
-        item_grade character(1),
-        ord_qty numeric,
-        ord_amount numeric CHECK (ord_amount>0)
-    );
+```sql
+CREATE TABLE orders (
+    ord_no integer,
+    ord_date date,
+    item_name character(35),
+    item_grade character(1),
+    ord_qty numeric,
+    ord_amount numeric CHECK (ord_amount>0)
+);
+```
 
 #### Voorbeeld UNIQUE
 
@@ -100,14 +106,16 @@ Een waarde in een column mag maar één keer voorkomen, over alle entiteiten in 
 
 Bijvoorbeeld als iemand zich registreert op een website met zijn e-mail adres da mag dat e-mail adres maar één keer voorkomen. Dan zeg je dat e-mailadres unique moet zijn.
 
-    CREATE TABLE orders(
-        ord_no integer UNIQUE,
-        ord_date date,
-        item_name character(35),
-        item_grade character(1),
-        ord_qty numeric,
-        ord_amount numeric
-    );
+```sql
+CREATE TABLE orders (
+    ord_no integer UNIQUE,
+    ord_date date,
+    item_name character(35),
+    item_grade character(1),
+    ord_qty numeric,
+    ord_amount numeric
+);
+```
 
 In dit voorbeeld is `ord_no` unique.
 
@@ -117,15 +125,17 @@ Een primary key is altijd uniek.
 
 Een primary key gebruiken we om een entiteit te identificeren. Bijvoorbeeld een BSN.
 
-    CREATE TABLE orders(
-        ord_no integer,
-        ord_date date,
-        item_name character(35),
-        item_grade character(1),
-        ord_qty numeric,
-        ord_amount numeric,
-        PRIMARY KEY (ord_no,item_name)
-    );
+```sql
+CREATE TABLE orders (
+    ord_no integer,
+    ord_date date,
+    item_name character(35),
+    item_grade character(1),
+    ord_qty numeric,
+    ord_amount numeric,
+    PRIMARY KEY (ord_no,item_name)
+);
+```
 
 ##### PRIMARY KEY vs UNIQUE
 
