@@ -4,6 +4,8 @@
 
 Een database heeft een eigen taal om daar data uit te halen. Bijna alle relationele databases hebben SQL als onderliggende taal om data eruit te halen. 
 
+Relationeel wilt zeggen dat de tabellen relaties met elkaar hebben. Bijvoorbeeld tabel docent en tabel persoon hebben een relatie met elkaar. Tabel docent bestaat uit een persoon. Een persoon kan wel of geen docent zijn, maar we kunnen geen docent hebben die niks is, daar heb je persoon voor nodig.
+
 Elke database heeft zijn eigen dialect van SQL. Zo hebben we bijvoorbeeld postresql dat we gebruiken in PGAdmin om database in te richten en data te muteren.
 
 PostgreSQL is open source.
