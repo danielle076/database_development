@@ -20,7 +20,7 @@ Als je data in een database wilt opslaan moet het aan een paar dingen voldoen.
 
 De data moet consistent zijn.
 - <i>Sla de data niet dubbel op</i>. Bijv. wanneer je een rekeningnummer 1234 in tabel 1 hebt staan en hetzelfde rekeningnummer ook in tabel 2. Wanneer het rekeningnummer verandert en alleen in tabel 1 wordt aangepast is je data inconsistent
-- <i>Relaties moeten blijven kloppen wanneer de gegevens verwijderd worden</i>.
+- <i>Relaties moeten blijven kloppen wanneer de gegevens verwijderd worden</i>. Bijv. we hebben twee tabellen/klassen, 1 tabel docent en 1 tabel Danielle. Wanneer tabel Danielle weggaat moet tabel docent blijven bestaan, want daar staat nog andere docenten in
 
 Autorisatie/Authenticatie: bij installeren moest je een postgres user aanmaken en hiervoor heb je een wachtwoord aangemaakt. Deze user heeft toegang tot <u>ALLE</u> DBMS.
 - <i>Geef niet iedereen toegang tot lezen, schrijven en verwijderen</i>.
