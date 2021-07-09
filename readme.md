@@ -38,3 +38,7 @@ Create, Read, Update en Delete (CRUD) zijn de vier basisfuncties die databases  
 - Delete: Verwijderen van gegevens.
 
 Hoe je deze kunt toepassen in postgreSQL lees je [hier](crud.md).
+
+### CRUD oefening
+
+[Deze](crud_opdracht.md) opgaven zijn een vervolg op de tabel oefening.
