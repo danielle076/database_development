@@ -30,7 +30,7 @@ Ga [hier](create_opdracht.md) oefenen met tabellen aanmaken.
 
 ### CRUD
 
-Create, Read, Update en Delete (CRUD) zijn de vier basisfuncties die databases  moeten kunnen uitvoeren.
+Create, Read, Update en Delete (CRUD) zijn de vier basisfuncties die databases moeten kunnen uitvoeren.
 
 - Create (of insert): Toevoegen van nieuwe gegevens.
 - Read (of select): Opvragen van gegevens.
@@ -42,3 +42,7 @@ Hoe je deze kunt toepassen in postgreSQL lees je [hier](crud.md).
 ### CRUD oefening
 
 [Deze](crud_opdracht.md) opgaven zijn een vervolg op de tabel oefening.
+
+### Relaties
+
+Lees [hier](relaties.md) meer over relaties. 
