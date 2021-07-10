@@ -1,5 +1,16 @@
 ## Relaties
 
+- Java: Onderlinge verhoudingen tussen objecten
+- Database: Verhoudingen tussen entiteiten
+
+
+- Java: Has-a relaties en is-a relaties
+- Database: Alleen has-relaties
+
+
+- Java: Relaties worden gemaakt met instantie variabelen
+- Database: Maken gebruik van Foreign Keys en koppeltabellen
+
 ### Relaties in Java
 
 In Java heb je twee soorten relaties:
@@ -51,3 +62,33 @@ public class Person {
     private List<Company> companies;
 }
 ```
+
+### Kardinaliteit in Java
+
+- 0 tot 1 relatie, iemand heeft bijvoorbeeld 0 of 1 adres, dus nooit 2, 3 of 5
+- 1 tot 1 relatie, iemand heeft altijd een adres
+- 0 tot N relatie, 0 tot meer kan bijvoorbeeld zijn iemand heeft 0 of meer kinderen
+- 1 tot N relatie, 1 of meer kan bijvoorbeeld zijn een bedrijf heeft 1 of meer werknemers
+- N tot N relatie, meer of meer is bijvoorbeeld een hond kan meerdere baasjes hebben en een baasje kan meerdere honden hebben
+
+Standaard 0, 1 of oneindig! Je kan ook zeggen dat iets 1 tot 5 relatie kan zijn, bijvoorbeeld iemand kan max 5 adressen hebben.
+
+### Kardinaliteit in Database
+
+- 0 tot 1 relatie
+- 1 tot 1 relatie
+- 0 tot N relatie
+- 1 tot N relatie
+- N tot N relatie
+
+Altijd 0, 1 of oneindig. In een database model zeggen we nooit dat iets een 1 tot 5 relatie kan hebben.
+
+### Compositie & aggregatie
+
+De diamantjes die ingekleurd of niet ingekleurd zijn.
+
+- Aggregatie: geen eigenaarschap. 
+- Aggregatie: objecten kunnen los van elkaar bestaan
+- Compositie: wanneer het object met eigenaarschap wordt verwijderd, verdwijnen de relatie-objecten ook
+
+Stel je hebt een klasse Person en een klasse Adres en je verwijderd de klasse Person, heeft het dan nut om de klasse Adres te laten bestaan. Heeft het wel nut om klasse Adres the laten bestaan dat hij niet verwijderd hoeft te worden dan heb je een aggregatie. Moet Adres verwijdert worden als Person klasse verwijderd wordt dan heb je een compositie.

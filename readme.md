@@ -45,4 +45,4 @@ Hoe je deze kunt toepassen in postgreSQL lees je [hier](crud.md).
 
 ### Relaties
 
-Lees [hier](relaties.md) meer over relaties. 
+Lees [hier](relaties.md) meer over relaties.
