@@ -46,3 +46,7 @@ Hoe je deze kunt toepassen in postgreSQL lees je [hier](crud.md).
 ### Relaties
 
 Lees [hier](relaties.md) meer over relaties.
+
+### UML & Tabel
+
+Het toepassen van relaties in databases lees je [hier](uml_tabel.md).
