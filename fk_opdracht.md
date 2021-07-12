@@ -159,11 +159,11 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Person
 
-| id | first_name | last_name |
-| :--- |:--- | : --- |
-|1 | Nick | Stuivenberg
-| 2| Nova | Eeken
-|3| Sjaak | Polak
+| id   | first_name | last_name |
+| :--- | :--------- | --------- |
+|1| Nick | Stuivenberg <br/>
+|2| Nova | Eeken <br/>
+|3| Sjaak | Polak <br/>
 |4| Frederik | de Kleine
 
 ##### Company
@@ -193,13 +193,14 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Dog
 
-| id | name | species |
-| :--- |:--- | : --- |
-| 1 | Dotje | Terrier
-| 2 | Nelis | Labrador
-| 3 | Bram | Labradoodle
-| 4 | Frank | D. herder
-| 5 | Lassie | Wiener
+| id   | name | species |
+| :--- | :--------- | --------- |
+|1| Dotje | Terrier <br/>
+|2| Nelis | Labrador <br/>
+|3| Bram | Labradoodle <br/>
+|4| Frank | D. herder
+|5| Lassie | Wiener
+
 
 ### Opdracht 7a
 
