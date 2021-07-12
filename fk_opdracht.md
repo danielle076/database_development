@@ -56,7 +56,7 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 ##### Person
 
 | id   | first_name | last_name |
-| :--- | :--------- | --------- |
+| :--- | :--------- | :--------- |
 |1| Nick | Stuivenberg <br/>
 |2| Nova | Eeken <br/>
 |3| Sjaak | Polak <br/>
@@ -64,8 +64,8 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Dog
 
-| id | name | species
-| :--- |:--- | : --- |
+| id | name | species |
+| :--- |:--- | :--- |
 | 1 | Dotje | Terrier
 | 2 | Nelis | Labrador
 | 3 | Bram | Labradoodle
@@ -93,7 +93,7 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Dog
 
-| id | name | species
+| id | name | species |
 | :--- |:--- | : --- |
 | 1 | Dotje | Terrier
 | 2 | Nelis | Labrador
@@ -116,10 +116,10 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Person
 
-| id | first_name | last_name | address_id
-| :--- |:--- | : --- | :---
+| id | first_name | last_name | address_id |
+| :--- |:--- | : --- | :--- |
 |1 | Nick | Stuivenberg | 2
-| 2| Nova | Eeken | null
+|2| Nova | Eeken | null
 |3| Sjaak | Polak | null
 |4| Frederik | de Kleine | null
 
@@ -159,7 +159,7 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Person
 
-| id | first_name | last_name
+| id | first_name | last_name |
 | :--- |:--- | : --- |
 |1 | Nick | Stuivenberg
 | 2| Nova | Eeken
@@ -193,7 +193,7 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Dog
 
-| id | name | species
+| id | name | species |
 | :--- |:--- | : --- |
 | 1 | Dotje | Terrier
 | 2 | Nelis | Labrador
