@@ -93,13 +93,14 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Dog
 
-| id | name | species |
-| :--- |:----- | : ------- |
-| 1 | Dotje | Terrier <br/>
-| 2 | Nelis | Labrador <br/>
-| 3 | Bram | Labradoodle <br/>
-| 4 | Frank | D. herder <br/>
-| 5 | Lassie | Wiener <br/>
+| id   | name | species |
+| :--- | :--------- | --------- |
+|1| Dotje | Terrier <br/>
+|2| Nelis | Labrador <br/>
+|3| Bram | Labradoodle <br/>
+|4| Frank | D. herder
+|5| Lassie | Wiener
+
 
 #### Jouw uitwerking #2
 
