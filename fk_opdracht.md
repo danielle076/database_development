@@ -74,6 +74,43 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 #### Jouw uitwerking #1
 
+Het is een 0 tot 1 relatie, ze mogen een relatie met elkaar hebben maar dit hoeft niet. Ook mogen ze los van elkaar bestaan. Het maakt dus niet uit waar je de foreign key gaat bijhouden.
+
+<i>Optie 1: bijhouden in Person</i>
+
+| id   | first_name | last_name | dog_id
+| :--- | :--------- | :--------- | :----- |
+|1| Nick | Stuivenberg | 1 <br/>
+|2| Nova | Eeken | 2 <br/>
+|3| Sjaak | Polak | 2 <br/>
+|4| Frederik | de Kleine | null
+
+| id | name | species |
+| :--- |:--- | :--- |
+| 1 | Dotje | Terrier
+| 2 | Nelis | Labrador
+| 3 | Bram | Labradoodle
+| 4 | Frank | D. herder
+| 5 | Lassie | Wiener
+
+<i>Optie 2: bijhouden in Dog</i>
+
+| id   | first_name | last_name |
+| :--- | :--------- | :--------- |
+|1| Nick | Stuivenberg <br/>
+|2| Nova | Eeken <br/>
+|3| Sjaak | Polak <br/>
+|4| Frederik | de Kleine
+
+| id | name | species | owner_id |
+| :--- |:--- | :--- | :--- |
+| 1 | Dotje | Terrier | 1
+| 2 | Nelis | Labrador | 2
+| 3 | Bram | Labradoodle | 3
+| 4 | Frank | D. herder | 4
+| 5 | Lassie | Wiener | null
+
+
 ### Opdracht 2
 
 Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
@@ -103,6 +140,15 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 #### Jouw uitwerking #2
 
+Het is een 0 tot meer relatie. In de dog tabel wil je bijhouden wie de eigenaar is. De hond heeft altijd maar 1 eigenaar en de eigenaar kan meer honden hebben.
+
+| id   | name | species | owner_id |
+| :--- | :--------- | :--------- | :---- | 
+|1| Dotje | Terrier | 1<br/>
+|2| Nelis | Labrador | 1<br/>
+|3| Bram | Labradoodle | 2<br/>
+|4| Frank | D. herder | 3
+|5| Lassie | Wiener | 4
 
 ### Opdracht 3
 
@@ -140,8 +186,16 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 2 | LOI | 3 <br/>
 3 | NCOI | 4 <br/>
 
-
 #### Jouw uitwerking #3
+
+Person en Company hebben een relatie met address: address_id. We moeten er voor zorgen dat er een relatie komt tussen Company en Person. Een Company kan meerdere personen in dienst hebben, dus de Company is degene die een lijst heeft en Person hoort altijd bij één bedrijf. We zetten de foreign key bij Person. Daar kun je in bijhouden waar de persoon in kwestie bij werkt.
+
+| id   | first_name | last_name | address_id | company_id
+| :--- | :--------- | :--------- | :------ | :------ |
+|1| Nick | Stuivenberg | 2 | 1<br/>
+|2| Nova | Eeken | null  | 1<br/>
+|3| Sjaak | Polak | null | 3<br/>
+|4| Frederik | de Kleine | null | 4
 
 ### Opdracht 4
 
@@ -149,6 +203,23 @@ Bedenk zelf de tabellen met de volgende regels:
 
 * Een Persoon kan 0 tot meerdere duiven hebben
 * Een duif heeft altijd 1 eigenaar.
+
+#### Jouw uitwerking #4
+
+Een Persoon kan 0 tot meer duiven hebben, dus Persoon heeft een lijst met duiven. Een duif hoort altijd bij één persoon.
+
+| id   | first_name | last_name |
+| :--- | :--------- | --------- |
+|1| Nick | Stuivenberg <br/>
+|2| Nova | Eeken <br/>
+|3| Sjaak | Polak <br/>
+|4| Frederik | de Kleine
+
+| ringnummer | naam | person_id |
+| :--- | :---- | :----- |
+| 1 | duif 1 | 1 |
+| 2 | duif 2 | 1 |
+| 3 | duif 3 | 3 |
 
 ### Opdracht 5 (Doordenkertje)
 
@@ -174,6 +245,17 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 2 | LOI | <br/>
 3 | NCOI | <br/>
 
+#### Jouw uitwerking #5
+
+Je kan in tabel Company bijhouden wie er voor je werkt, maar dan kun je maar 1 persoon bijhouden. Hetzelfde geldt voor Person, je kan daar het bedrijf toevoegen, maar dan kan een person maar voor 1 bedrijf werken.
+
+De standaardregel in databases is op het moment dat je een meer op meer relatie hebt is er altijd een koppeltabel. Deze koppeltabel:
+- bevat 2 Foreign Keys
+- één Primary Key op basis van de twee foreign keys (een primary key kan uit meerdere velden/kolommen bestaan)
+
+![img_23.png](pictures/img_23.png)
+
+De hele tabel is een many to many relatie, maar omdat er een koppeltabel er tussen zit wordt het een one to many naar one to many relatie (van Person naar PersonCompany en van Company naar PersonCompany): PersonCompany hoort altijd bij één persoon en zo'n persoon kan meerdere PersonCompany hebben. Een Company kan meerdere PersonCompany relaties hebben, maar de PersonCompany hoort altijd bij één Company.
 
 ### Opdracht 6
 
