@@ -101,7 +101,6 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 |4| Frank | D. herder
 |5| Lassie | Wiener
 
-
 #### Jouw uitwerking #2
 
 
@@ -117,11 +116,11 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 ##### Person
 
-| id | first_name | last_name | address_id |
-| :--- |:--- | : --- | :--- |
-|1 | Nick | Stuivenberg | 2
-|2| Nova | Eeken | null
-|3| Sjaak | Polak | null
+| id   | first_name | last_name | address_id |
+| :--- | :--------- | :--------- | :------ |
+|1| Nick | Stuivenberg | 2 <br/>
+|2| Nova | Eeken | null <br/>
+|3| Sjaak | Polak | null <br/>
 |4| Frederik | de Kleine | null
 
 ##### Address
