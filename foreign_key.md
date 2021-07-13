@@ -1,4 +1,6 @@
-## Create table
+## Foreign key
+
+Zelf een foreign key maken wordt uitgelegd met onderstaand voorbeeld.
 
 We maken een standaard tabel. Deze tabel company gaat een 1 of meer relatie hebben met press_officer.
 
