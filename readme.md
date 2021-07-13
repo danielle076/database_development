@@ -54,3 +54,7 @@ Het toepassen van relaties in databases lees je [hier](uml_tabel.md).
 ### Add foreign key opdracht
 
 Naar aanleiding van de informatie uit UML en tabel zijn er [hier](fk_opdracht.md) oefeningen.
+
+### Foreign key in SQL
+
+Hoe je foreign key in SQL kunt toepassen lees je [hier](foreign_key.md)
