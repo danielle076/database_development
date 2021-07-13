@@ -283,6 +283,21 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 |4| Frank | D. herder
 |5| Lassie | Wiener
 
+#### Jouw uitwerking #6
+
+Koppeltabel maken en de twee id's toevoegen: DogPerson.
+
+| dog_id | person_id |
+| :--- | :--- |
+1 | 2
+2 | 3
+1 | 3
+2 | 4
+5 | 1
+
+Let op, stel je zou nog een keer 1 / 2 toevoegen (dit is samen een primary key) aan de database dan krijg je een foutmelding, omdat het maar één keer mag voorkomen (is niet meer uniek).
+
+Een tabel heeft altijd maar 1 primary key, maar ene primary key mag uit meerdere kolommen bestaan, zoals je ziet bij tabel DogPerson.
 
 ### Opdracht 7a
 
@@ -301,8 +316,23 @@ Breidt bovenstaande uitwerking uit:
 
 #### Jouw uitwerking #7a
 
+Koppeltabel maken van shop en product: ShopProduct.
+
+| shop_id | product_id |
+| :--- | :---- |
+1 | 2
+1 | 3
+4 | 8
+
 #### Jouw uitwerking #7b
 
+Je gaat de voorraden bijhouden, dus noemen we heb niet ShopProduct maar Stock.
+
+| shop_id | product_id | amount |
+| :--- | :---- | :---- |
+1 | 2 | 10
+1 | 3 | 100
+4 | 8 | 222
 
 ### Opdracht 8
 
@@ -312,7 +342,6 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 * Een adres kan bij 1 tot meerdere personen horen.
 * Van elk adres wordt de begin- en einddatum bijgehouden.
 * Bij een huidig adres is de einddatum null (leeg)
-
 
 ##### Person
 
@@ -334,6 +363,18 @@ Bekijk onderstaande tabellen. Pas deze aan met de volgende regels:
 
 #### Jouw uitwerking #8
 
+Een persoon kan meerdere adressen hebben en een adres kan bij meerdere personen horen.
+Koppeltabel PersonAdress.
+
+Wat is het voordeel van dit zo opslaan: je kan bijhouden wat iemands vorige adres was
+
+| person_id | adress_id | start_date | end_date |
+| :---- | :---- | :---- | :---- |
+1 | 1 | 20201-01-01 | 2020-02-01
+1 | 2 | 2020-02-01 | 2020-03-01
+1 | 3 | 2020-03-01 | null
+
+
 ### Opdracht 9
 
 Maak de volgende tabellen en relaties.
@@ -344,3 +385,42 @@ Maak de volgende tabellen en relaties.
 * Per factuur wil je ook de hoeveelheid van het product weten.
 
 #### Jouw uitwerking #9
+
+Tabel Order
+
+| id | date | amount_paid |
+| :--- | :--- | :--- |
+1 | 2020-01-01 | 0
+2 | 2020-01-01 | 0
+3 | 2020-01-01 | 0
+4 | 2020-01-01 | 0
+5 | 2020-01-01 | 0
+6 | 2020-01-01 | 0
+7 | 2020-01-01 | 0
+8 | 2020-01-01 | 0
+
+Tabel Product
+
+| id | name | price |
+| :--- | :--- | :--- |
+| 1 | Nagellak | 8.00 |
+| 2 | Oogschaduw | 2.50 |
+| 3 | Mascara | 4.00 |
+| 4 | Fake lashes | 7.40 |
+| 5 | Lippenstift | 3.00 |
+| 6 | Concealer | 9.00 |
+
+We maken een relatie tussen een order en een payment.
+
+Tabel OrderProduct: Tabel OrderLine
+
+| order_id | product_id | amount |
+| :--- | :--- | :--- |
+1 | 1 | 4
+1 | 2 | 6
+2 | 3 | 1
+2 | 4 | 1
+5 | 5 | 2
+5 | 6 | 3
+
+We hebben een order met order_id 1, die heeft een product_id 1 en daar staan er 4 van in.
