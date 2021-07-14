@@ -57,4 +57,9 @@ Naar aanleiding van de informatie uit UML en tabel zijn er [hier](fk_opdracht.md
 
 ### Foreign key in SQL
 
-Hoe je foreign key in SQL kunt toepassen lees je [hier](foreign_key.md)
+Hoe je foreign key in SQL kunt toepassen lees je [hier](foreign_key.md).
+
+### Constraints
+
+Constraints zijn beperkingen die je aan je data kunt toevoegen. Dit
+doe je op kolom-niveau of tabel-niveau in SQL. [Hier](constraints.md) kun je daar meer over lezen.
