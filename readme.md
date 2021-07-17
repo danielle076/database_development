@@ -67,3 +67,15 @@ doe je op kolom-niveau of tabel-niveau in SQL. [Hier](constraints.md) kun je daa
 ### Select met JOIN
 
 Data uit verschillende tabellen combineren doe je met [join](join.md).
+
+### JOIN oefening
+
+We gaan een .tar bestand importeren in pgAdmin.
+
+1. maak een database
+2. rechts klikken op de database > Restore
+3. bij filename ga je het .tar bestand zoeken en selecteren
+4. role name wordt postgres
+5. klik op button Restore
+
+Het bestand dat we hebben geïmporteerd heet `dvdrental.tar` en de opdrachten die we maken met deze database staan [hier](join_opdracht.md).
