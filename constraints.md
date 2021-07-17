@@ -113,7 +113,7 @@ Zet de waarde van de foreign-key naar een ingestelde default waarde.
 
 Als je een tabel aanmaakt kun je een default waarde meegeven. Bij het aanmaken kun je bijvoorbeeld aangeven dat `company_id INT` een default waarde krijgt.
 
-Op het moment dat dan uit het voorbeeld persoon 1 wordt verwijderd dan wordt het op de default waarde gezet,
+Op het moment dat dan uit het voorbeeld persoon 1 wordt verwijderd dan wordt het op de default waarde gezet.
 
 ```sql
 CREATE TABLE press_officer(
@@ -130,7 +130,7 @@ CREATE TABLE press_officer(
 
 ### Constraints - CASCADE
 
-Deze is belangrijk! Wanneer je een rij uit de hoofdtabel verwijderd, worden alle relaties ook verwijderd!
+Deze is belangrijk! Wanneer je een rij uit de hoofdtabel verwijderd, worden alle relaties/verwijzingen ook verwijderd!
 
 ```sql
 CREATE TABLE press_officer(
@@ -147,7 +147,14 @@ CREATE TABLE press_officer(
 
 ### Alter table
 
-Achteraf een foreign toevoegen doe je met `alter table`.
+Achteraf een foreign key toevoegen doe je met `alter table`.
+
+- Eerst `ALTER TABLE`. <br/>
+- Dan de naam van de tabel `child_table`.<br/>
+- Zeggen dat we een `ADD CONSTRAINT` willen toevoegen. <br/>
+- Vervolgens de naam van de constraint `constraint_name`. <br/>
+- Dan zeggen we welke foreign keys `FOREIGN KEY (fk_columns)`. <br/>
+- En als laatste op welke tabel `parent_table` en welke column `(parent_key_colWumns)`.
 
 ```sql
 ALTER TABLE child_table
