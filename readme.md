@@ -63,3 +63,7 @@ Hoe je foreign key in SQL kunt toepassen lees je [hier](foreign_key.md).
 
 Constraints zijn beperkingen die je aan je data kunt toevoegen. Dit
 doe je op kolom-niveau of tabel-niveau in SQL. [Hier](constraints.md) kun je daar meer over lezen.
+
+### Select met JOIN
+
+Data uit verschillende tabellen combineren doe je met [join](join.md).
